@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ img, vid }) => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
     <>
-      {/* Thumbnail 1:1 */}
       <div
-        className="w-[20rem] lg:w-[32rem] aspect-square overflow-hidden rounded-xl shadow-lg shadow-black/30 relative cursor-pointer"
+        className="w-[20rem] lg:w-[32rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer"
         onClick={() => setShowVideo(true)}
       >
         <img
-          src="/home.jpg"
+          src={img}
           alt="Thumbnail"
           className="w-full h-full object-cover"
         />
@@ -26,13 +25,11 @@ const TestimonialCard = () => {
           </svg>
         </div>
       </div>
-
-      {/* Fullscreen Video Overlay */}
       {showVideo && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 transition-all duration-300">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 transition-all duration-300 px-5">
           <div className="w-full max-w-3xl aspect-square relative">
             <video className="w-full h-full object-cover" controls autoPlay>
-              <source src="/video.mp4" type="video/mp4" />
+              <source src={vid} type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
             {/* Tombol close */}
