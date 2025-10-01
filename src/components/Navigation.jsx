@@ -5,22 +5,45 @@ const Navigation = () => {
 
   const toggleMenu = () => setOpen(!open);
 
+  const menuItems = ["Beranda", "Kavling", "Cluster", "Fasilitas", "Tentang Kami"];
+
   return (
     <div className="sticky top-0 z-50">
-      <div className="w-full flex justify-between items-center py-3 px-5 bg-[#25321E]/85 backdrop-blur-sm shadow-lg shadow-black/30">
+      <div className="w-full flex justify-between items-center py-3 px-5.5 bg-[#25321E]/85 backdrop-blur-sm">
         <img src="/brand.svg" alt="brand" className="h-9" />
-        <button onClick={toggleMenu} className="font-semibold text-[16px] text-[#FFF3C6] p-1">
+        {/* Tombol Menu (Mobile) */}
+        <button
+          onClick={toggleMenu}
+          className="font-medium text-[16px] text-[#FFF3C6] cursor-pointer hover:text-[#E2C97A] p-1 lg:hidden"
+        >
           Menu
         </button>
+
+        {/* Navbar (Desktop) */}
+        <ul className="hidden lg:flex gap-6 text-[#FFF3C6] font-medium">
+          {menuItems.map((item) => (
+            <li
+              key={item}
+              className="hover:text-[#E2C97A] cursor-pointer transition-colors p-1"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
+
+      {/* Dropdown (Mobile) */}
       {open && (
-        <div className="w-full py-1 absolute bg-[#FFF3C6] text-[#2C3626] shadow-lg shadow-black/40 overflow-hidden">
+        <div className="w-full py-1 absolute bg-[#FFF3C6] text-[#2C3626] shadow-lg shadow-black/40 overflow-hidden lg:hidden">
           <ul className="flex flex-col text-[14px] font-bold">
-            <li className="px-6 py-3 hover:bg-[#3d4a31] cursor-pointer">Beranda</li>
-            <li className="px-6 py-3 hover:bg-[#3d4a31] cursor-pointer">Kavling</li>
-            <li className="px-6 py-3 hover:bg-[#3d4a31] cursor-pointer">Cluster</li>
-            <li className="px-6 py-3 hover:bg-[#3d4a31] cursor-pointer">Fasilitas</li>
-            <li className="px-6 py-3 hover:bg-[#3d4a31] cursor-pointer">Tentang Kami</li>
+            {menuItems.map((item) => (
+              <li
+                key={item}
+                className="px-6 py-3 cursor-pointer transition-colors hover:bg-[#3d4a31] hover:text-[#FFF3C6]"
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       )}

@@ -15,7 +15,7 @@ const dataHomepage = [{
   },
   {
     uid: 3,
-    img: '/home.jpg',
+    img: '/shm.jpg',
     title: 'Semakin aman dengan surat yang lengkap',
     desc: 'Kami mengutamakan kenyamanan dan keamanan Anda. Setiap unit sudah dilengkapi SHM pecah yang siap balik nama di Otorita IKN, memastikan investasi Anda terlindungi sepenuhnya dan bebas dari keraguan.',
     cta: 'Lihat Info Kavling Kami',

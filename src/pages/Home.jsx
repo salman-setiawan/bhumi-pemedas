@@ -18,8 +18,8 @@ const Home = () => {
           <div className="flex lg:hidden w-full"><Trailer /></div>
           <div className="w-full flex flex-col bg-[#2C3626] gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
             <div className="flex flex-col gap-y-1">
-              <img src="/brand.svg" alt="" className="w-20" />
-              <div className="font-bold text-[#FFF3C6] text-[24px]">Sudah lama tinggal di samboja tapi belum punya rumah?</div>
+              <img src="/brand.svg" alt="" className="w-18" />
+              <div className="font-bold text-[#FFF3C6] text-[24px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
             </div>
             <Button label='Miliki rumah sekarang!' font='bold' bg='#FFF3C6' color='#2C3626' />
           </div>

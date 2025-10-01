@@ -22,6 +22,9 @@ const Trailer = () => {
           <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
+          <div className="absolute bottom-4 lg:bottom-auto lg:top-6 text-white italic px-2 py-0.5 bg-black/75">
+            <div className="text-[#fff3c6] font-medium">tekan disini untuk memutar video dengan suara</div>
+          </div>
         </div>
       </div>
       {showVideo && (
