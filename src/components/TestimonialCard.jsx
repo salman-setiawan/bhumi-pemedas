@@ -6,7 +6,7 @@ const TestimonialCard = ({ img, vid }) => {
   return (
     <>
       <div
-        className="w-[20rem] lg:w-[32rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer"
+        className="w-[20rem] lg:w-[24rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer"
         onClick={() => setShowVideo(true)}
       >
         <img
@@ -14,7 +14,7 @@ const TestimonialCard = ({ img, vid }) => {
           alt="Thumbnail"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+        <div className="absolute inset-0 flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-16 w-16 text-white"
@@ -32,7 +32,6 @@ const TestimonialCard = ({ img, vid }) => {
               <source src={vid} type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
-            {/* Tombol close */}
             <button
               onClick={() => setShowVideo(false)}
               className="absolute -top-10 right-0 text-white text-2xl"

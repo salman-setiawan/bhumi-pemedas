@@ -18,12 +18,12 @@ const Parallax = ({ img }) => {
   }, []);
 
   return (
-    <div className="relative h-[24rem] overflow-hidden">
+    <div className="relative h-[20rem] overflow-hidden">
       <img
         ref={imgRef}
         src={img}
         alt="img"
-        className="h-[130%] w-full object-cover translate-y-[-100px]"
+        className="h-[130%] w-full object-cover translate-y-[-110px] xl:translate-y-[-140px]"
       />
       <div
         className="absolute inset-0 bg-black/40"></div>
