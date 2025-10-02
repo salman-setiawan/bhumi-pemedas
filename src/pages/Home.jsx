@@ -1,22 +1,22 @@
-import Parallax from '../components/animate/Parallax'
 import Button from '../components/Button'
 import FeatureCard from '../components/FeatureCard'
 import TestimonialCard from '../components/TestimonialCard'
 import dataHomepage from "../data/dataHomepage";
 import Navigation from "../components/Navigation";
 import Trailer from "../components/Trailer";
+import ParallaxHome from '../components/animate/ParallaxHome';
 
 const Home = () => {
   return (
-    <div className="bg-[#2C3626]">
+    <div className="bg-[#FFF3C6]">
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
       {/* Section 1 */}
-      <div className="flex justify-center">
+      <div className="flex justify-center bg-[#2C3626]">
         <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:py-20 items-center gap-x-12">
           <div className="flex lg:hidden w-full"><Trailer /></div>
-          <div className="w-full flex flex-col bg-[#2C3626] gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
+          <div className="w-full flex flex-col gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
             <div className="flex flex-col gap-y-1">
               <img src="/brand.svg" alt="" className="w-18" />
               <div className="font-bold text-[#FFF3C6] text-[24px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="hidden lg:block lg:shadow-xl lg:shadow-black/20"><Trailer /></div>
         </div>
       </div>
-      <Parallax img='drone-2.jpg' />
+      <ParallaxHome img='drone-2.jpg' />
       {/* Section 2 */}
       <div className="flex w-full justify-center bg-[#FFF3C6]">
         <div className="flex flex-col gap-y-3 pt-8 lg:max-w-[1200px] w-full">

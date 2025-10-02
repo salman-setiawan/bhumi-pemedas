@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const Parallax = ({ img }) => {
+const ParallaxHome = ({ img }) => {
   const imgRef = useRef(null);
 
   useEffect(() => {
@@ -46,4 +46,4 @@ const Parallax = ({ img }) => {
 };
 
 
-export default Parallax;
+export default ParallaxHome;
