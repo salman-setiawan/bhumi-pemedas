@@ -81,7 +81,7 @@ const Home = () => {
         <div className="font-bold text-[#FFF3C6] text-center text-[16px] px-6 py-3">
           Lokasi Bhumi Pemedas Samboja
         </div>
-        <div className="w-full h-[20rem] lg:h-[30rem]">
+        <div className="w-full h-[24rem] lg:h-[32rem]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20114.XXXX!2d117.1348779!3d-0.9992735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6a900306faead%3A0xbcee5c629979480a!2sPerumahan+Bhumi+Pemedas+Permai!5e0!3m2!1sid!2sid!4vXXXXXXXXXXXXXX"
             width="100%"
@@ -95,10 +95,10 @@ const Home = () => {
       {/* Section 6 */}
       <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-12 pb-16 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.jpg')" }}>
         <div className="absolute inset-0 bg-black/75"></div>
-        <div className="relative w-2/3 lg:w-3/3 font-bold text-[#FFF3C6] text-[24px]">
+        <div className="relative text-center font-bold text-[#FFF3C6] text-[24px]">
           Hubungi kami untuk informasi lebih lanjut
         </div>
-        <div className="relative">
+        <div className="relative flex justify-center">
           <Button label="Kontak Whatsapp kami disini" font="bold" bg="#FFF3C6" color="#2C3626" />
         </div>
       </div>
