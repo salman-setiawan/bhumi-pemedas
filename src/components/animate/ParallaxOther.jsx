@@ -18,7 +18,7 @@ const ParallaxOther = ({ img, title }) => {
   }, []);
 
   return (
-    <div className="relative h-[24rem] overflow-hidden">
+    <div className="relative h-[24rem] lg:h-[28rem] overflow-hidden">
       <img
         ref={imgRef}
         src={img}

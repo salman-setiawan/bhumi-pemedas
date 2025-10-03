@@ -17,7 +17,14 @@ const dataFasum = [
       '/home.jpg','/home.jpg','/home.jpg','/home.jpg',
       '/home.jpg','/home.jpg'
     ],
-  }
+  },
+    {
+    uid: 4,
+    label: 'Masjid dan TPA',
+    images: [
+      'https://drive.google.com/uc?export=view&id=1MbJoo7JILZ0Nk9cltDsT1eYStQewzODG','/home.jpg','/home.jpg'
+    ],
+  },
 ]
 
 export default dataFasum

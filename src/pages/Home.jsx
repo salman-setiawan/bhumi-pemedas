@@ -8,7 +8,7 @@ import ParallaxHome from '../components/animate/ParallaxHome';
 
 const Home = () => {
   return (
-    <div className="bg-[#FFF3C6]">
+    <div className="bg-[#2C3626]">
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
@@ -71,7 +71,10 @@ const Home = () => {
               <div className="font-black text-[#FFF3C6] text-[48px] uppercase">60 Juta Cash</div>
               <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
             </div>
-            <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#2C3626' />
+            <div className="flex gap-x-4">
+               <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#2C3626' />
+                <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+            </div>
           </div>
           <img src="/denah.jpg" alt="img" className="hidden lg:block h-[32rem] w-1/2 object-cover" />
         </div>
