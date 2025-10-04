@@ -22,7 +22,7 @@ const Navigation = () => {
 
   return (
     <div className="sticky top-0 z-50">
-      <div className="w-full flex justify-between items-center py-3 px-5.5 bg-[#25321E]/85 backdrop-blur-sm">
+      <div className="w-full flex justify-between items-center py-3 px-5.5 bg-[#21271D]/85 backdrop-blur-sm">
         <img src="/brand.svg" alt="brand" className="h-9" />
         
         {/* Tombol Menu (Mobile) */}

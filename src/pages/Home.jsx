@@ -8,12 +8,12 @@ import ParallaxHome from '../components/animate/ParallaxHome';
 
 const Home = () => {
   return (
-    <div className="bg-[#2C3626]">
+    <div className="bg-[#21271D]">
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
       {/* Section 1 */}
-      <div className="flex justify-center bg-[#2C3626]">
+      <div className="flex justify-center bg-[#21271D]">
         <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:py-20 items-center gap-x-12">
           <div className="flex lg:hidden w-full"><Trailer /></div>
           <div className="w-full flex flex-col gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
@@ -21,7 +21,7 @@ const Home = () => {
               <img src="/brand.svg" alt="" className="w-18" />
               <div className="font-bold text-[#FFF3C6] text-[24px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
             </div>
-            <Button label='Miliki rumah sekarang!' font='bold' bg='#FFF3C6' color='#2C3626' />
+            <Button label='Miliki rumah sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
           </div>
           <div className="hidden lg:block lg:shadow-xl lg:shadow-black/20"><Trailer /></div>
         </div>
@@ -30,13 +30,16 @@ const Home = () => {
       {/* Section 2 */}
       <div className="flex w-full justify-center bg-[#FFF3C6]">
         <div className="flex flex-col gap-y-3 pt-8 lg:max-w-[1200px] w-full">
-          <div className="font-bold text-[#2C3626] text-[24px] text-center">Apa kata mereka?</div>
+          <div className="font-bold text-[#21271D] text-[24px] text-center">Apa kata mereka?</div>
           <div className="w-full px-6 pb-8">
             <div className="flex gap-x-6 py-4 snap-x snap-mandatory overflow-x-auto">
               {dataHomepage[0].testimonial.map((item) => (
-                <div key={item.uid} className="snap-center shrink-0">
-                  <TestimonialCard vid={item.vid} img={item.img} />
-                </div>
+                <TestimonialCard
+                  key={item.uid}
+                  img={item.img}
+                  vid={item.vid}
+                  desc={item.desc}
+                />
               ))}
             </div>
           </div>
@@ -44,7 +47,7 @@ const Home = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="w-full flex justify-center text-center px-6 py-8 bg-[#2C3626]">
+      <div className="w-full flex justify-center text-center px-6 py-8 bg-[#21271D]">
         <div className="font-bold text-[#FFF3C6] text-[24px]">dan kenapa sih harus punya rumah di Bhumi Pemedas Samboja?</div>
       </div>
       <div className="flex w-full justify-center bg-[#FFF3C6]">
@@ -61,7 +64,7 @@ const Home = () => {
         </div>
       </div>
       {/* Section 4 */}
-      <div className="flex justify-center bg-[#2C3626]">
+      <div className="flex justify-center bg-[#21271D]">
         <div className="flex flex-col lg:flex-row items-center lg:max-w-[1200px] gap-x-8">
           <img src="/denah.jpg" alt="img" className="lg:hidden w-full object-cover" />
           <div className="w-full flex flex-col px-6 pt-10 pb-16 lg:py-12 gap-y-8">
@@ -72,8 +75,8 @@ const Home = () => {
               <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
             </div>
             <div className="flex gap-x-4">
-               <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#2C3626' />
-                <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+              <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
+              <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
             </div>
           </div>
           <img src="/denah.jpg" alt="img" className="hidden lg:block h-[32rem] w-1/2 object-cover" />
@@ -102,7 +105,7 @@ const Home = () => {
           Hubungi kami untuk informasi lebih lanjut
         </div>
         <div className="relative flex justify-center">
-          <Button label="Kontak Whatsapp kami disini" font="bold" bg="#FFF3C6" color="#2C3626" />
+          <Button label="Kontak Whatsapp kami disini" font="bold" bg="#FFF3C6" color="#21271D" />
         </div>
       </div>
     </div>

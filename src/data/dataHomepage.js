@@ -25,31 +25,31 @@ const dataHomepage = [{
     {
       uid: 1,
       img: '/testi-arif.jpg',
-      vid: 'https://drive.google.com/uc?export=download&id=1FHIf2E9C2sT1nxRvLn714858tTJbxnPb',
+      vid: 'https://youtube.com/shorts/8MTgMKDHQjM',
       desc: 'testimoni dari pak arif',
     },
     {
       uid: 2,
       img: '/testi-yusuf.jpg',
-      vid: 'https://drive.google.com/uc?export=download&id=1CZXLL4RzXkad7hLF70yL9-DC4CAEcJQV',
+      vid: 'https://youtube.com/shorts/a2pgk4XlHC0',
       desc: 'testimoni dari pak yusuf',
     },
     {
       uid: 3,
       img: '/testi-ansar.jpg',
-      vid: 'https://drive.google.com/uc?export=download&id=115KZvB_hRkCW8sEhqd8H5aYTs1KJ1v-T',
+      vid: 'https://youtube.com/shorts/M2lWf_FD4hM',
       desc: 'testimoni dari pak ansar',
     },
     {
       uid: 4,
       img: '/testi-aji.jpg',
-      vid: 'https://drive.google.com/uc?export=download&id=1yBtpbs_v6A4BCo-K6TxZdtvAOEAMXPUu',
+      vid: 'https://youtube.com/shorts/j38EqPvWoR8',
       desc: 'testimoni dari pak aji',
     },
     {
       uid: 5,
       img: '/testi-saihu.jpg',
-      vid: 'https://drive.google.com/uc?export=download&id=11WPtWtzpGNJRR1THLdhGhwQ-jvhJ2fNm',
+      vid: 'https://youtube.com/shorts/b7Z47abBBWs',
       desc: 'testimoni dari pak saihu',
     },]
   },
