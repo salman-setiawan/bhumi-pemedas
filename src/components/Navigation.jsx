@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
@@ -20,32 +20,57 @@ const Navigation = () => {
     setOpen(false); // otomatis tutup dropdown setelah klik (mobile)
   };
 
-  return (
-    <div className="sticky top-0 z-50">
-      <div className="w-full flex justify-between items-center py-3 px-5.5 bg-[#21271D]/85 backdrop-blur-sm">
-        <img src="/brand.svg" alt="brand" className="h-9" />
-        
-        {/* Tombol Menu (Mobile) */}
-        <button
-          onClick={toggleMenu}
-          className="font-medium text-[16px] text-[#FFF3C6] cursor-pointer hover:text-[#E2C97A] p-1 lg:hidden"
-        >
-          Menu
-        </button>
+  const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-        {/* Navbar (Desktop) */}
-        <ul className="hidden lg:flex gap-6 text-[#FFF3C6] font-medium">
-          {menuItems.map((item) => (
-            <li
-              key={item.label}
-              onClick={() => handleNavigation(item.path)}
-              className="hover:text-[#E2C97A] cursor-pointer transition-colors p-1"
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul>
-      </div>
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile(); // langsung cek saat pertama render
+    window.addEventListener("resize", checkMobile);
+
+    const handleScroll = () => {
+      if (window.scrollY > 448) {
+        console.log('tes scrolled > 50');
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+        console.log('tes else');
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      className={`fixed w-full flex justify-between items-center py-3 px-5.5 top-0 z-50 transition-all duration-300
+        ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#21271D]/90" : "bg-transparent") : "backdrop-blur-md bg-[#21271D]/90"}
+      `}
+    >
+      <img src="/brand.svg" alt="brand" className="h-9" />
+      <button
+        onClick={toggleMenu}
+        className="font-semibold text-[16px] text-[#FFF3C6] cursor-pointer hover:text-[#E2C97A] p-1 lg:hidden"
+      >
+        Menu
+      </button>
+      <ul className="hidden lg:flex gap-6 text-[#FFF3C6] font-semibold">
+        {menuItems.map((item) => (
+          <li
+            key={item.label}
+            onClick={() => handleNavigation(item.path)}
+            className="hover:text-[#E2C97A] cursor-pointer transition-colors p-1"
+          >
+            {item.label}
+          </li>
+        ))}
+      </ul>
 
       {/* Dropdown (Mobile) */}
       {open && (

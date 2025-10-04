@@ -17,7 +17,7 @@ const Trailer = () => {
   return (
     <div>
       <div
-        className="overflow-hidden relative cursor-pointer w-screen lg:w-full h-[18rem] lg:h-auto"
+        className="overflow-hidden relative cursor-pointer w-screen lg:w-full h-[28rem] lg:h-auto"
         onClick={handleOpenVideo}
       >
         <video

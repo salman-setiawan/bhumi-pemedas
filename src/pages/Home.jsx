@@ -8,7 +8,7 @@ import ParallaxHome from '../components/animate/ParallaxHome';
 
 const Home = () => {
   return (
-    <div className="bg-[#21271D]">
+    <div className="">
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
@@ -65,23 +65,25 @@ const Home = () => {
       </div>
       {/* Section 4 */}
       <div className="flex justify-center bg-[#21271D]">
-        <div className="flex flex-col lg:flex-row items-center lg:max-w-[1200px] gap-x-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <img src="/denah.jpg" alt="img" className="lg:hidden w-full object-cover" />
-          <div className="w-full flex flex-col px-6 pt-10 pb-16 lg:py-12 gap-y-8">
-            <div className="p-1.5 bg-red-600 uppercase font-semibold text-white w-fit text-[12px] animate-blink">persediaan terbatas!</div>
-            <div className="flex flex-col gap-y-2">
-              <div className="font-medium text-[#FFF3C6] text-[20px]">Dapatkan segera kavling kami dengan harga:</div>
-              <div className="font-black text-[#FFF3C6] text-[48px] uppercase">60 Juta Cash</div>
-              <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
-            </div>
-            <div className="flex gap-x-4">
-              <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
-              <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+          <div className="flex px-6 py-12 lg:py-0 lg:justify-end">
+            <div className="flex lg:w-[550px] flex flex-col gap-y-8">
+              <div className="p-1.5 bg-red-600 uppercase font-semibold text-white w-fit text-[12px] animate-blink">persediaan terbatas!</div>
+              <div className="flex flex-col gap-y-2">
+                <div className="font-medium text-[#FFF3C6] text-[20px]">Dapatkan segera kavling kami dengan harga:</div>
+                <div className="font-black text-[#FFF3C6] text-[48px] uppercase">60 Juta Cash</div>
+                <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
+              </div>
+              <div className="flex gap-x-4">
+                <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
+                <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+              </div>
             </div>
           </div>
-          <img src="/denah.jpg" alt="img" className="hidden lg:block h-[32rem] w-1/2 object-cover" />
+          <img src="/denah.jpg" alt="img" className="hidden lg:block h-[32rem] object-cover" />
         </div>
-      </div>      
+      </div>
       {/* Section 5 */}
       <div className="w-full bg-[#141414] flex flex-col">
         <div className="font-bold text-[#FFF3C6] text-center text-[16px] px-6 py-3">
