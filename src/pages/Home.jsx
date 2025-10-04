@@ -45,13 +45,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* Section 3 */}
       <div className="w-full flex justify-center text-center px-6 py-8 bg-[#21271D]">
         <div className="font-bold text-[#FFF3C6] text-[24px]">dan kenapa sih harus punya rumah di Bhumi Pemedas Samboja?</div>
       </div>
-      <div className="flex w-full justify-center bg-[#FFF3C6]">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:px-6 lg:py-8 lg:max-w-[1200px]">
+      <div className="flex w-full justify-center bg-[#FFF3C6] lg:px-6 lg:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:max-w-[1200px]">
           {dataHomepage[0].benefit.map((item) => (
             <FeatureCard
               key={item.uid}
@@ -65,10 +64,10 @@ const Home = () => {
       </div>
       {/* Section 4 */}
       <div className="flex justify-center bg-[#21271D]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 items-center">
           <img src="/denah.jpg" alt="img" className="lg:hidden w-full object-cover" />
-          <div className="flex px-6 py-12 lg:py-0 lg:justify-end">
-            <div className="flex lg:w-[550px] flex flex-col gap-y-8">
+          <div className="flex py-12 lg:py-0 lg:justify-end">
+            <div className="flex px-6 lg:w-[592px] flex flex-col gap-y-8">
               <div className="p-1.5 bg-red-600 uppercase font-semibold text-white w-fit text-[12px] animate-blink">persediaan terbatas!</div>
               <div className="flex flex-col gap-y-2">
                 <div className="font-medium text-[#FFF3C6] text-[20px]">Dapatkan segera kavling kami dengan harga:</div>
@@ -81,7 +80,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <img src="/denah.jpg" alt="img" className="hidden lg:block h-[32rem] object-cover" />
+          <img src="/denah.jpg" alt="img" className="hidden lg:block min-h-[26rem] w-full object-cover" />
         </div>
       </div>
       {/* Section 5 */}

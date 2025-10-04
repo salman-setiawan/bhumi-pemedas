@@ -38,8 +38,8 @@ const Trailer = () => {
           >
             <path d="M8 5v14l11-7z" />
           </svg>
-          <div className="absolute bottom-4 lg:bottom-auto lg:top-6 text-white italic px-2 py-0.5 bg-black/75">
-            <div className="text-[#fff3c6] font-medium">
+          <div className="absolute bottom-4 lg:bottom-auto lg:top-6 text-white italic px-2 py-0.5 bg-black/50">
+            <div className="text-[#fff3c6] font-medium text-[14px] lg:text-[16px]">
               tekan disini untuk memutar video dengan suara
             </div>
           </div>

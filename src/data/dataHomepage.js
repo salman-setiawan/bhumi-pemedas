@@ -10,7 +10,7 @@ const dataHomepage = [{
     uid: 2,
     img: '/beach.jpg',
     title: 'Perumahan tepat di depan Pantai Wisata',
-    desc: 'Bayangkan setiap hari bisa menikmati udara segar laut dan pemandangan pantai yang indah hanya dengan berjalan kaki dari rumah Anda. Hunian yang sekaligus menjadi tempat liburan pribadi—sebuah keseimbangan sempurna antara kerja, keluarga, dan rekreasi.',
+    desc: 'Bayangkan setiap hari bisa menikmati udara segar laut dan pemandangan pantai yang indah hanya dengan berjalan kaki dari rumah Anda. Hunian yang sekaligus menjadi tempat liburan pribadi menjadi sebuah keseimbangan sempurna antara kerja, keluarga, dan rekreasi.',
     cta: 'Lihat Fasilitas Umum Kami',
   },
   {
