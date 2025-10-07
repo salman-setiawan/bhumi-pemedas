@@ -52,7 +52,7 @@ const Navigation = () => {
         ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#FFF7DB]/65 font-bold" : "bg-transparent text-[#FFF7DB] font-semibold") : ""}
       `}
     >
-      <div className="px-5.5 flex justify-between items-center">
+      <div className="px-5.5 lg:px-8 flex justify-between items-center">
         <img src="/brand.svg" alt="brand" className="h-9" />
       <button
         onClick={toggleMenu}

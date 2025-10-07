@@ -18,7 +18,7 @@ const ParallaxHome = ({ img }) => {
   }, []);
 
   return (
-    <div className="relative h-[20rem] overflow-hidden">
+    <div className="relative h-[20rem] lg:h-[24rem] overflow-hidden">
       <img
         ref={imgRef}
         src={img}

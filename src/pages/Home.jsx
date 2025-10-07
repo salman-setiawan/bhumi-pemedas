@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       {/* Section 1 */}
       <div className="flex justify-center bg-[#FFF7DB]">
-        <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:py-20 items-center gap-x-12">
+        <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:pt-20 lg:pb-24 items-center gap-x-12">
           <div className="flex lg:hidden w-full"><Trailer /></div>
           <div className="w-full flex flex-col gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
             <div className="flex flex-col gap-y-4">
@@ -50,7 +50,7 @@ const Home = () => {
       </div>
       {/* Section 3 */}
       <div className="flex w-full justify-center bg-[#FFF7DB]">
-        <div className="flex flex-col gap-y-12 py-16 lg:max-w-[1200px] w-full px-0 lg:px-6">
+        <div className="flex flex-col gap-y-12 pt-12 pb-20 lg:max-w-[1200px] w-full px-0 lg:px-6">
           <div className="font-bold text-[#21271D] text-[32px] lg:text-[40px] px-6 lg:px-0 lg:w-4/6">Kenapa sih harus punya rumah di Bhumi Pemedas Samboja?</div>
           <div className="flex flex-col gap-y-8 lg:max-w-[1200px]">
             {dataHomepage[0].benefit.map((item) => (
