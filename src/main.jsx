@@ -7,7 +7,6 @@ import {
 import './index.css'
 
 import Home from './pages/Home';
-import Fasum from './pages/Fasum';
 import Bio from './pages/Bio';
 import Kavling from './pages/Kavling';
 import Cluster from './pages/Cluster';
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
-    {
-    path: "/fasilitas",
-    element: <Fasum />,
   },
       {
     path: "/cluster",

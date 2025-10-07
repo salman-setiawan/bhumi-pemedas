@@ -42,17 +42,15 @@ const ParallaxOther = ({ img, title }) => {
       ></div>
       <div className="absolute inset-0 flex items-end justify-center">
         <div className="max-w-[1200px] w-full px-6 pb-10 text-white">
-          <nav className="text-sm pb-2">
-            <ol className="flex space-x-2">
-              <li>
-                <a href="/" className="hover:underline">
-                  Home
-                </a>
-              </li>
-              <li>/</li>
-              <li className="text-gray-400">{title}</li>
-            </ol>
-          </nav>
+          <ul className="flex space-x-2 text-sm pb-2 font-medium">
+            <li>
+              <a href="/" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>/</li>
+            <li className="text-gray-400">{title}</li>
+          </ul>
           <h1 className="text-[28px] lg:text-[48px] font-bold">
             {title}
           </h1>

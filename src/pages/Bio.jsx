@@ -1,5 +1,7 @@
 import ParallaxOther from "../components/animate/ParallaxOther"
+import FasumGallery from "../components/FasumGallery"
 import Navigation from "../components/Navigation"
+import dataFasum from "../data/dataFasum"
 
 const Bio = () => {
   return (
@@ -9,8 +11,14 @@ const Bio = () => {
       </div>
       <ParallaxOther img='drone-2.webp' title='Tentang Kami' />
       <div className="flex w-full justify-center bg-[#FFF3C6]">
-        <div className="flex flex-col gap-y-3 pt-8 lg:max-w-[1200px] w-full h-screen">
-          <div className="font-bold text-[#2C3626] text-[24px] text-center">AKAN DATANG</div>
+        <div className="flex flex-col gap-y-12 py-12 px-6 lg:max-w-[1200px] w-full">
+          {dataFasum.map((item) => (
+            <FasumGallery
+              key={item.uid}
+              label={item.label}
+              images={item.images}
+            />
+          ))}
         </div>
       </div>
     </div>

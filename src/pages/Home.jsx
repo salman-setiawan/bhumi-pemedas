@@ -111,17 +111,17 @@ const Home = () => {
         <div className="font-bold text-[#FFF3C6] text-center text-[16px] px-6 py-3">Lokasi Bhumi Pemedas Samboja</div>
       </div>
       {/* Section 6 */}
-      <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-24 pb-28 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
+      <div className="relative w-full flex flex-col lg:justify-center px-6 pt-12 pb-16 lg:pt-24 lg:pb-28 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
         <div className="absolute inset-0 bg-black/75"></div>
-        <div className="relative text-center font-bold text-[#FFF3C6] text-[24px]">
+        <div className="relative text-center font-bold text-[#FFF3C6] text-[24px] text-left lg:text-center w-4/5 lg:w-full">
           Hubungi kami untuk informasi lebih lanjut
         </div>
-        <div className="relative flex justify-center gap-x-6">
+        <div className="relative flex flex-col lg:flex-row justify-center gap-6">
           <Button 
             label={
               <>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5 fill-white">
-                  <path d="M16.04 2.003C8.835 2.003 2.97 7.868 2.97 15.073c0 2.627.69 5.036 2.004 7.24L2 30l7.925-2.935c2.137 1.172 4.313 1.735 6.115 1.735h.005c7.205 0 13.07-5.865 13.07-13.07 0-7.205-5.865-13.07-13.07-13.07zm0 23.493c-1.584 0-3.22-.43-4.66-1.248l-.334-.197-4.703 1.743 1.57-4.848-.218-.347a10.89 10.89 0 01-1.642-5.769c0-6.013 4.894-10.907 10.907-10.907 6.013 0 10.907 4.894 10.907 10.907s-4.894 10.906-10.907 10.906zm5.948-8.186c-.326-.163-1.932-.954-2.232-1.063-.3-.109-.519-.163-.738.164-.218.327-.848 1.063-1.04 1.282-.19.218-.382.245-.708.082-.326-.163-1.376-.507-2.62-1.616-.969-.865-1.622-1.933-1.812-2.259-.19-.327-.02-.503.144-.665.148-.147.327-.382.49-.573.163-.191.218-.327.327-.546.109-.218.055-.41-.027-.573-.082-.163-.738-1.781-1.01-2.438-.266-.64-.537-.553-.738-.563l-.628-.01c-.218 0-.573.082-.873.382-.3.3-1.145 1.118-1.145 2.727 0 1.608 1.172 3.166 1.335 3.384.163.218 2.308 3.527 5.593 4.942.782.337 1.392.538 1.868.688.784.25 1.496.215 2.06.131.628-.094 1.932-.789 2.205-1.551.273-.762.273-1.414.19-1.551-.082-.136-.3-.218-.627-.382z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-current text-white">
+                  <path d="M12 2a10 10 0 0 0-8.94 14.58L2 22l5.66-1.53A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.07-1.12l-.29-.17-3.34.9.91-3.27-.19-.3A8 8 0 1 1 12 20zm4.36-6.13c-.25-.13-1.47-.72-1.7-.81-.22-.08-.38-.12-.54.12-.16.23-.63.8-.78.96-.14.16-.28.18-.52.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.49-1.41-1.74-.15-.25-.02-.39.11-.52.12-.12.25-.29.37-.44.12-.15.16-.25.24-.42.08-.16.04-.32-.02-.44s-.53-1.32-.73-1.8c-.19-.47-.38-.41-.52-.41h-.44c-.15 0-.4.06-.6.26-.21.21-.79.77-.79 1.89s.81 2.19.93 2.34c.12.15 1.6 2.43 3.89 3.41.54.23.97.37 1.3.47.54.17 1.03.15 1.42.09.43-.06 1.34-.55 1.53-1.08.19-.53.19-.99.13-1.08-.06-.1-.21-.15-.44-.26z" />
                 </svg>
                 WhatsApp
               </>
@@ -133,8 +133,8 @@ const Home = () => {
           <Button 
             label={
               <>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-                  <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H8.9v-2.88h1.6V9.41c0-1.58.94-2.46 2.38-2.46.69 0 1.41.12 1.41.12v1.55h-.8c-.79 0-1.04.49-1.04.99v1.19h1.77l-.28 2.88h-1.49v6.99A10 10 0 0022 12z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-current text-white">
+                  <path d="M22 12a10 10 0 1 0-11.5 9.87v-7h-2v-3h2v-2c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.63-1.3 1.27v1.67h2.3l-.37 3h-1.93v7A10 10 0 0 0 22 12z" />
                 </svg>
                 Facebook
               </>
