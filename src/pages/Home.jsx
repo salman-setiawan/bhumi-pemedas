@@ -49,8 +49,8 @@ const Home = () => {
       <div className="w-full flex justify-center text-center px-6 py-8 bg-[#21271D]">
         <div className="font-bold text-[#FFF3C6] text-[24px]">dan kenapa sih harus punya rumah di Bhumi Pemedas Samboja?</div>
       </div>
-      <div className="flex w-full justify-center bg-[#FFF3C6] lg:px-6 lg:py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:max-w-[1200px]">
+      <div className="flex w-full justify-center bg-[#FFF3C6] lg:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 lg:max-w-[1200px] lg:px-6">
           {dataHomepage[0].benefit.map((item) => (
             <FeatureCard
               key={item.uid}
