@@ -21,7 +21,9 @@ const Home = () => {
               <img src="/brand.svg" alt="" className="w-18" />
               <div className="font-bold text-[#FFF3C6] text-[24px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
             </div>
-            <Button label='Miliki rumah sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
+            <a href="https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda." target="_blank">
+              <Button label='Miliki rumah sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
+            </a>
           </div>
           <div className="hidden lg:block lg:shadow-xl lg:shadow-black/20"><Trailer /></div>
         </div>
@@ -31,8 +33,8 @@ const Home = () => {
       <div className="flex w-full justify-center bg-[#FFF3C6]">
         <div className="flex flex-col gap-y-3 pt-8 lg:max-w-[1200px] w-full">
           <div className="font-bold text-[#21271D] text-[24px] text-center">Apa kata mereka?</div>
-          <div className="w-full px-6 pb-8">
-            <div className="flex gap-x-6 py-4 snap-x snap-mandatory overflow-x-auto">
+          <div className="w-full lg:px-6 pb-8">
+            <div className="flex gap-x-6 py-4 px-6 lg:px-0 snap-x snap-mandatory overflow-x-auto">
               {dataHomepage[0].testimonial.map((item) => (
                 <TestimonialCard
                   key={item.uid}
@@ -58,6 +60,7 @@ const Home = () => {
               title={item.title}
               desc={item.desc}
               cta={item.cta}
+              link={item.link}
             />
           ))}
         </div>
@@ -75,8 +78,12 @@ const Home = () => {
                 <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
               </div>
               <div className="flex gap-x-4">
-                <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
-                <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda." target="_blank">
+                  <Button label='Beli sekarang!' font='bold' bg='#FFF3C6' color='#21271D' />
+                </a>
+                <a href="/kavling">
+                  <Button label='Selengkapnya' font='bold' color='#FFF3C6' />
+                </a>
               </div>
             </div>
           </div>
@@ -100,13 +107,21 @@ const Home = () => {
         </div>
       </div>
       {/* Section 6 */}
-      <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-12 pb-16 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
+      <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-20 pb-24 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
         <div className="absolute inset-0 bg-black/75"></div>
         <div className="relative text-center font-bold text-[#FFF3C6] text-[24px]">
           Hubungi kami untuk informasi lebih lanjut
         </div>
-        <div className="relative flex justify-center">
-          <Button label="Kontak Whatsapp kami disini" font="bold" bg="#FFF3C6" color="#21271D" />
+        <div className="relative flex justify-center gap-x-6">
+          <a href="https://wa.me/6281234567890?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda." target="_blank">
+            <Button label="Whatsapp" font="bold" bg="#FFF3C6" color="#21271D" />
+          </a>
+          <a href="https://www.facebook.com/bhumipemedaspermaisamboja" target="_blank">
+            <Button label="Facebook" font="bold" bg="#FFF3C6" color="#21271D" />
+          </a>
+          <a href="https://www.instagram.com/bhumi.pemedas.permai/">
+            <Button label="Instagram" font="bold" bg="#FFF3C6" color="#21271D" />
+          </a>
         </div>
       </div>
     </div>

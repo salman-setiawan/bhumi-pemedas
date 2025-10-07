@@ -23,7 +23,7 @@ const ParallaxHome = ({ img }) => {
         ref={imgRef}
         src={img}
         alt="img"
-        className="h-[130%] w-full object-cover translate-y-[-110px] xl:translate-y-[-140px]"
+        className="h-[130%] w-full object-cover translate-y-[-130px] xl:translate-y-[-140px]"
       />
       <div
         className="absolute inset-0 bg-black/40"></div>

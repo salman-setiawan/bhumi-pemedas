@@ -1,6 +1,6 @@
 import Button from "./Button"
 
-const FeatureCard = ({ img, title, desc, cta }) => {
+const FeatureCard = ({ img, title, desc, cta, link }) => {
   return (
     <div>
       <div className="w-full flex flex-col h-full">
@@ -10,7 +10,9 @@ const FeatureCard = ({ img, title, desc, cta }) => {
             <div className="font-bold text-[#2C3626] text-[20px] uppercase">{title}</div>
             <div className="text-justify">{desc}</div>
           </div>
-          <Button label={cta} font='semibold' bg='#2C3626' color='#FFF3C6' />
+          <a href={`/${link}`}>
+            <Button label={cta} font='semibold' bg='#2C3626' color='#FFF3C6' />
+          </a>
         </div>
       </div>
     </div>

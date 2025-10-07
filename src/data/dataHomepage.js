@@ -5,6 +5,7 @@ const dataHomepage = [{
     title: 'Satu-satunya area perumahan di Samboja',
     desc: 'Nikmati hunian eksklusif di kawasan strategis Samboja. Dengan menjadi satu-satunya perumahan di area ini, Anda tidak hanya mendapatkan kenyamanan, tetapi juga nilai investasi yang terus meningkat seiring perkembangan wilayah.',
     cta: 'Lihat Cluster Kami',
+    link: 'cluster',
   },
   {
     uid: 2,
@@ -12,6 +13,7 @@ const dataHomepage = [{
     title: 'Perumahan tepat di depan Pantai Wisata',
     desc: 'Bayangkan setiap hari bisa menikmati udara segar laut dan pemandangan pantai yang indah hanya dengan berjalan kaki dari rumah Anda. Hunian yang sekaligus menjadi tempat liburan pribadi menjadi sebuah keseimbangan sempurna antara kerja, keluarga, dan rekreasi.',
     cta: 'Lihat Fasilitas Umum Kami',
+    link: 'fasilitas',
   },
   {
     uid: 3,
@@ -19,6 +21,7 @@ const dataHomepage = [{
     title: 'Semakin aman dengan surat yang lengkap',
     desc: 'Kami mengutamakan kenyamanan dan keamanan Anda. Setiap unit sudah dilengkapi SHM pecah yang siap balik nama di Otorita IKN, memastikan investasi Anda terlindungi sepenuhnya dan bebas dari keraguan.',
     cta: 'Lihat Info Kavling Kami',
+    link: 'kavling',
   },],
 
   testimonial: [

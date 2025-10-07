@@ -22,7 +22,7 @@ const Trailer = () => {
       >
         <video
           ref={thumbVideoRef}
-          src="/1.0.mp4" // <-- ganti dengan file lokal/mp4 valid sebagai dummy thumbnail
+          src="/1.0.webm" // <-- ganti dengan file lokal/webm valid sebagai dummy thumbnail
           className="w-full h-full object-cover"
           autoPlay
           loop
