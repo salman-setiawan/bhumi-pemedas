@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap');
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Manrope', sans-serif;
+  }
+}
+
 
 @layer utilities {
   @keyframes blink {
@@ -10,4 +18,5 @@
     animation: blink 1s steps(1, end) infinite;
   }
 }
+
 

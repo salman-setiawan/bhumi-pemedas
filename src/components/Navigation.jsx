@@ -11,7 +11,6 @@ const Navigation = () => {
     { label: "Beranda", path: "/" },
     { label: "Kavling", path: "/kavling" },
     { label: "Cluster", path: "/cluster" },
-    { label: "Fasilitas", path: "/fasilitas" },
     { label: "Tentang Kami", path: "/tentang-kami" },
   ];
 
@@ -25,7 +24,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
     checkMobile(); // langsung cek saat pertama render
     window.addEventListener("resize", checkMobile);
@@ -49,18 +48,19 @@ const Navigation = () => {
 
   return (
     <div
-      className={`fixed w-full flex justify-between items-center py-3 px-5.5 top-0 z-50 transition-all duration-300
-        ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#21271D]/90" : "bg-transparent") : "backdrop-blur-md bg-[#21271D]/90"}
+      className={`fixed w-full items-center py-3 top-0 z-50 transition-all duration-300
+        ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#FFF7DB]/90" : "bg-transparent") : "backdrop-blur-md bg-[#FFF7DB]/90"}
       `}
     >
-      <img src="/brand.svg" alt="brand" className="h-9" />
+      <div className="px-5.5 flex justify-between items-center">
+        <img src="/brand.svg" alt="brand" className="h-9" />
       <button
         onClick={toggleMenu}
-        className="font-semibold text-[16px] text-[#FFF3C6] cursor-pointer hover:text-[#E2C97A] p-1 lg:hidden"
+        className="font-semibold text-[#FFF7DB] text-[16px] cursor-pointer hover:text-[#E2C97A] px-1 py-2 lg:hidden"
       >
         Menu
       </button>
-      <ul className="hidden lg:flex gap-6 text-[#FFF3C6] font-semibold">
+      <ul className="hidden lg:flex gap-x-6 font-semibold">
         {menuItems.map((item) => (
           <li
             key={item.label}
@@ -71,16 +71,16 @@ const Navigation = () => {
           </li>
         ))}
       </ul>
-
+      </div>
       {/* Dropdown (Mobile) */}
       {open && (
-        <div className="w-full py-1 absolute bg-[#FFF3C6] text-[#2C3626] shadow-lg shadow-black/40 overflow-hidden lg:hidden">
-          <ul className="flex flex-col text-[14px] font-bold">
+        <div className="w-[200px] py-1 absolute top-16 right-4 bg-[#FFF7DB] shadow-xl shadow-black/10 overflow-hidden lg:hidden">
+          <ul className="flex flex-col font-semibold">
             {menuItems.map((item) => (
               <li
                 key={item.label}
                 onClick={() => handleNavigation(item.path)}
-                className="px-6 py-3 cursor-pointer transition-colors hover:bg-[#3d4a31] hover:text-[#FFF3C6]"
+                className="px-4 py-3 cursor-pointer transition-colors hover:bg-[#3d4a31] hover:text-[#FFF3C6]"
               >
                 {item.label}
               </li>

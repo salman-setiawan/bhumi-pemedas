@@ -3,15 +3,15 @@ import Button from "./Button"
 const FeatureCard = ({ img, title, desc, cta, link }) => {
   return (
     <div>
-      <div className="w-full flex flex-col h-full">
-        <img src={img} alt="img" className="h-[18rem] object-cover w-full" />
-        <div className="flex flex-col px-6 lg:px-0 pt-8 pb-12 gap-y-8 lg:gap-y-0 lg:min-h-[380px] lg:justify-between">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-2">
+        <img src={img} alt="img" className="h-[18rem] lg:h-[20rem] object-cover w-full lg:rounded-2xl" />
+        <div className="flex flex-col px-6 pt-8 pb-12 gap-y-8">
           <div className="flex flex-col gap-y-3">
-            <div className="font-bold text-[#2C3626] text-[20px] uppercase">{title}</div>
-            <div className="text-justify">{desc}</div>
+            <div className="font-extrabold text-[#2C3626] text-[22px] uppercase">{title}</div>
+            <div className="text-justify font-medium">{desc}</div>
           </div>
           <a href={`/${link}`}>
-            <Button label={cta} font='semibold' bg='#2C3626' color='#FFF3C6' />
+            <Button label={cta} link={link} colorSpec='bg-[#2C3626] text-white' />
           </a>
         </div>
       </div>

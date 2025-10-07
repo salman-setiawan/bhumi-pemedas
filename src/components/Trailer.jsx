@@ -17,22 +17,19 @@ const Trailer = () => {
   return (
     <div>
       <div
-        className="overflow-hidden relative cursor-pointer w-screen lg:w-full h-[28rem] lg:h-auto"
+        className="overflow-hidden relative cursor-pointer w-full h-[20rem] lg:h-[28rem] bg-black items-center flex lg:h-auto lg:rounded-4xl"
         onClick={handleOpenVideo}
       >
-        <video
-          ref={thumbVideoRef}
-          src="/1.0.webm" // <-- ganti dengan file lokal/webm valid sebagai dummy thumbnail
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        <div className="block lg:hidden relative w-full h-auto aspect-video">
+          <video ref={thumbVideoRef} src="/1.0.webm" className="w-full h-full object-contain bg-black" autoPlay loop muted playsInline />
+        </div>
+        <div className="hidden lg:block">
+          <video ref={thumbVideoRef} src="/1.0.webm" className="w-full h-full object-contain bg-black" autoPlay loop muted playsInline />
+        </div>
         <div className="absolute inset-0 flex items-center justify-center bg-black/75">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-16 w-16 text-white"
+            className="h-20 w-20 text-white"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -40,7 +37,7 @@ const Trailer = () => {
           </svg>
           <div className="absolute bottom-4 lg:bottom-auto lg:top-6 text-white italic px-2 py-0.5 bg-black/50">
             <div className="text-[#fff3c6] font-medium text-[14px] lg:text-[16px]">
-              tekan disini untuk memutar video dengan suara
+              tekan tombol play untuk memutar video dengan suara
             </div>
           </div>
         </div>

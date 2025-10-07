@@ -14,14 +14,14 @@ const TestimonialCard = ({ img, vid, desc }) => {
     <div className="flex flex-col items-center">
       {/* Thumbnail */}
       <div
-        className="w-[20rem] lg:w-[24rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer"
+        className="w-[20rem] lg:w-[24rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer rounded-2xl"
         onClick={() => setShowVideo(true)}
       >
         <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
         <div className="absolute inset-0 flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-16 w-16 text-white"
+            className="h-20 w-20 text-white"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
