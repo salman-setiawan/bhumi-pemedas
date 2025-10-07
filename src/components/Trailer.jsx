@@ -17,10 +17,10 @@ const Trailer = () => {
   return (
     <div>
       <div
-        className="overflow-hidden relative cursor-pointer w-full h-[20rem] lg:h-[28rem] bg-black items-center flex lg:h-auto lg:rounded-4xl"
+        className="overflow-hidden relative cursor-pointer w-full h-[24rem] lg:h-[28rem] bg-black items-center flex lg:h-auto lg:rounded-4xl"
         onClick={handleOpenVideo}
       >
-        <div className="block lg:hidden relative w-full h-auto aspect-video">
+        <div className="block lg:hidden relative w-full aspect-square">
           <video ref={thumbVideoRef} src="/1.0.webm" className="w-full h-full object-contain bg-black" autoPlay loop muted playsInline />
         </div>
         <div className="hidden lg:block">

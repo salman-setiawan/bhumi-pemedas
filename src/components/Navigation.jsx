@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setOpen(false); // otomatis tutup dropdown setelah klik (mobile)
+    setOpen(false); 
   };
 
   const [scrolled, setScrolled] = useState(false);
@@ -26,11 +26,11 @@ const Navigation = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-    checkMobile(); // langsung cek saat pertama render
+    checkMobile(); 
     window.addEventListener("resize", checkMobile);
 
     const handleScroll = () => {
-      if (window.scrollY > 448) {
+      if (window.scrollY > 310) {
         console.log('tes scrolled > 50');
         setScrolled(true);
       } else {
@@ -48,15 +48,15 @@ const Navigation = () => {
 
   return (
     <div
-      className={`fixed w-full items-center py-3 top-0 z-50 transition-all duration-300
-        ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#FFF7DB]/90" : "bg-transparent") : "backdrop-blur-md bg-[#FFF7DB]/90"}
+      className={`fixed w-full items-center py-2.5 top-0 z-50 transition-all duration-300 lg:backdrop-blur-md lg:bg-[#FFF7DB]/65
+        ${isMobile ? (scrolled ? "backdrop-blur-md bg-[#FFF7DB]/65 font-bold" : "bg-transparent text-[#FFF7DB] font-semibold") : ""}
       `}
     >
       <div className="px-5.5 flex justify-between items-center">
         <img src="/brand.svg" alt="brand" className="h-9" />
       <button
         onClick={toggleMenu}
-        className="font-semibold text-[#FFF7DB] text-[16px] cursor-pointer hover:text-[#E2C97A] px-1 py-2 lg:hidden"
+        className=" text-[16px] cursor-pointer hover:text-[#E2C97A] px-1 py-2 lg:hidden"
       >
         Menu
       </button>
@@ -80,7 +80,7 @@ const Navigation = () => {
               <li
                 key={item.label}
                 onClick={() => handleNavigation(item.path)}
-                className="px-4 py-3 cursor-pointer transition-colors hover:bg-[#3d4a31] hover:text-[#FFF3C6]"
+                className="px-4 py-3 cursor-pointer transition-colors hover:bg-[#3d4a31] hover:text-[#FFF3C6] text-black"
               >
                 {item.label}
               </li>

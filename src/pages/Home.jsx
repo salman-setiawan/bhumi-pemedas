@@ -34,9 +34,9 @@ const Home = () => {
       <ParallaxHome img='drone-2.webp' />
       {/* Section 2 */}
       <div className="flex w-full justify-center bg-[#FFF7DB]">
-        <div className="flex flex-col gap-y-12 py-16 lg:max-w-[1200px] w-full px-6">
-          <div className="font-bold text-[#21271D] text-[32px] lg:text-[40px]">Apa kata mereka?</div>
-          <div className="flex gap-x-6 pb-6 snap-x snap-mandatory overflow-x-auto">
+        <div className="flex flex-col gap-y-8 lg:gap-y-12 py-16 lg:max-w-[1200px] w-full px-0 lg:px-6">
+          <div className="font-bold text-[#21271D] text-[32px] lg:text-[40px] px-6 lg:px-0">Apa kata mereka?</div>
+          <div className="flex gap-x-4 lg:gap-x-6 px-6 lg:px-0 pb-6 snap-x snap-mandatory overflow-x-auto">
             {dataHomepage[0].testimonial.map((item) => (
               <TestimonialCard
                 key={item.uid}
