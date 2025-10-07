@@ -10,7 +10,7 @@ const Fasum = () => {
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
-      <ParallaxOther img='drone-2.jpg' title='Fasilitas Umum' />
+      <ParallaxOther img='drone-2.webp' title='Fasilitas Umum' />
       <div className="flex w-full justify-center bg-[#FFF3C6]">
         <div className="flex flex-col gap-y-12 py-12 px-6 lg:max-w-[1200px] w-full">
           {dataFasum.map((item) => (

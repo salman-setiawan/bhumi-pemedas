@@ -26,7 +26,7 @@ const Home = () => {
           <div className="hidden lg:block lg:shadow-xl lg:shadow-black/20"><Trailer /></div>
         </div>
       </div>
-      <ParallaxHome img='drone-2.jpg' />
+      <ParallaxHome img='drone-2.webp' />
       {/* Section 2 */}
       <div className="flex w-full justify-center bg-[#FFF3C6]">
         <div className="flex flex-col gap-y-3 pt-8 lg:max-w-[1200px] w-full">
@@ -65,7 +65,7 @@ const Home = () => {
       {/* Section 4 */}
       <div className="flex justify-center bg-[#21271D]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 items-center">
-          <img src="/denah.jpg" alt="img" className="lg:hidden w-full object-cover" />
+          <img src="/denah.webp" alt="img" className="lg:hidden w-full object-cover" />
           <div className="flex py-12 lg:py-0 lg:justify-end">
             <div className="flex px-6 lg:w-[592px] flex flex-col gap-y-8">
               <div className="p-1.5 bg-red-600 uppercase font-semibold text-white w-fit text-[12px] animate-blink">persediaan terbatas!</div>
@@ -80,7 +80,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <img src="/denah.jpg" alt="img" className="hidden lg:block min-h-[26rem] w-full object-cover" />
+          <img src="/denah.webp" alt="img" className="hidden lg:block min-h-[26rem] w-full object-cover" />
         </div>
       </div>
       {/* Section 5 */}
@@ -100,7 +100,7 @@ const Home = () => {
         </div>
       </div>
       {/* Section 6 */}
-      <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-12 pb-16 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.jpg')" }}>
+      <div className="relative w-full flex flex-col lg:justify-center lg:text-center px-6 pt-12 pb-16 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
         <div className="absolute inset-0 bg-black/75"></div>
         <div className="relative text-center font-bold text-[#FFF3C6] text-[24px]">
           Hubungi kami untuk informasi lebih lanjut

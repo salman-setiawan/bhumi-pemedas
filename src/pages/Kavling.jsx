@@ -7,7 +7,7 @@ const Kavling = () => {
       <div className="sticky top-0 z-50">
         <Navigation />
       </div>
-      <ParallaxOther img='drone-2.jpg' title='Kavling' />
+      <ParallaxOther img='drone-2.webp' title='Kavling' />
       <div className="flex w-full justify-center bg-[#FFF3C6] pb-8">
         <div className="flex flex-col gap-y-8 py-8 px-6 lg:max-w-[1200px] w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-2 items-center">
@@ -23,14 +23,14 @@ const Kavling = () => {
                 <li className="text-[#2C3626] font-semibold text-[18px]">Untuk Legalitas Sertifikat Hak Milik (SHM) pecah per kavling.</li>
               </ul>
             </div>
-            <img src="/home.jpg" alt="" className="h-full object-cover" />
+            <img src="/home.webp" alt="" className="h-full object-cover" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-3 lg:gap-y-6">
             <div className="font-bold text-[#2C3626] text-[24px]">Kondisi Kavling</div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-2">
             </div>
-            <img src="/home.jpg" alt="" className="object-cover" />
-            <img src="/home.jpg" alt="" className="object-cover" />
+            <img src="/home.webp" alt="" className="object-cover" />
+            <img src="/home.webp" alt="" className="object-cover" />
           </div>
         </div>
       </div>
