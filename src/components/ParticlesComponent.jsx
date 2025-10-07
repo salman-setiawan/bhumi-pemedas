@@ -12,20 +12,20 @@ export default function ParticlesComponent() {
 
     return (
         <div
-            id="particles-js"
-            style={{
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-                // opsi 1
-                // width: "35vw",
-                // height: "35vh",
-                // opsi 2
-                width: "100%",
-                height: "30%",
-                zIndex: 0,
-                // backgroundColor: "red",
-            }}
+          className="opacity-60"
+          id="particles-js"
+          style={{
+              position: "absolute",
+              bottom: -10,
+              right: 0,
+              // opsi 1
+              // width: "35vw",
+              // height: "35vh",
+              // opsi 2
+              width: "100%",
+              height: "20%",
+              zIndex: 0,
+          }}
         ></div>
     );
 }
