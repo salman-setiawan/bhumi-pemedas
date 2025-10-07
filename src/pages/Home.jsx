@@ -1,3 +1,4 @@
+import ParticlesComponent from '../components/ParticlesComponent'
 import Button from '../components/Button'
 import FeatureCard from '../components/FeatureCard'
 import TestimonialCard from '../components/TestimonialCard'
@@ -13,7 +14,8 @@ const Home = () => {
         <Navigation />
       </div>
       {/* Section 1 */}
-      <div className="flex justify-center bg-[#FFF7DB]">
+      <div className="flex justify-center bg-[#FFF7DB]" style={{ position: "relative" }}>
+        <ParticlesComponent />
         <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:pt-20 lg:pb-24 items-center gap-x-12">
           <div className="flex lg:hidden w-full"><Trailer /></div>
           <div className="w-full flex flex-col gap-y-8 px-6 pt-6 lg:px-0 lg:pt-0">
@@ -21,10 +23,10 @@ const Home = () => {
               <img src="/brand.svg" alt="" className="w-16" />
               <div className="font-bold text-[32px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
             </div>
-            <Button 
-              label='Miliki rumah sekarang!' 
-              colorSpec='text-white bg-[#21271D]' 
-              link='https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda.' 
+            <Button
+              label='Miliki rumah sekarang!'
+              colorSpec='text-white bg-[#21271D]'
+              link='https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda.'
               target='_blank'
             />
           </div>
@@ -79,14 +81,14 @@ const Home = () => {
                 <div className="font-medium text-[#FFF3C6] text-[20px]">atau bayar DP 30 Juta, dengan cicilan 2 juta per bulan.</div>
               </div>
               <div className="flex gap-x-4">
-                <Button 
-                  label='Miliki rumah sekarang!' 
-                  colorSpec='bg-gradient-to-r from-[#723014] to-[#CF7C33] text-white' 
-                  link='https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda.' 
+                <Button
+                  label='Miliki rumah sekarang!'
+                  colorSpec='bg-gradient-to-r from-[#723014] to-[#CF7C33] text-white'
+                  link='https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda.'
                   target='_blank'
                 />
-                <Button 
-                  label='Selengkapnya' 
+                <Button
+                  label='Selengkapnya'
                   colorSpec='text-[#F5923B]'
                   link='/kavling'
                 />
@@ -117,7 +119,7 @@ const Home = () => {
           Hubungi kami untuk informasi lebih lanjut
         </div>
         <div className="relative flex flex-col lg:flex-row justify-center gap-6">
-          <Button 
+          <Button
             label={
               <>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-current text-white">
@@ -125,12 +127,12 @@ const Home = () => {
                 </svg>
                 WhatsApp
               </>
-            } 
+            }
             colorSpec="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white"
-            link="https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda." 
-            target="_blank" 
+            link="https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda."
+            target="_blank"
           />
-          <Button 
+          <Button
             label={
               <>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-current text-white">
@@ -138,27 +140,27 @@ const Home = () => {
                 </svg>
                 Facebook
               </>
-            } 
+            }
             colorSpec="flex items-center gap-2 bg-[#1877F2] hover:bg-[#0f6ae6] text-white"
-            link="https://www.facebook.com/bhumipemedaspermaisamboja" 
-            target="_blank" 
+            link="https://www.facebook.com/bhumipemedaspermaisamboja"
+            target="_blank"
           />
-          <Button 
+          <Button
             label={
               <>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-                  <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm8.75 2a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
+                  <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm8.75 2a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" />
                 </svg>
                 Instagram
               </>
-            } 
+            }
             colorSpec="flex items-center gap-2 bg-[#E4405F] hover:bg-[#cc3953] text-white"
-            link="https://www.instagram.com/bhumi.pemedas.permai/" 
-            target="_blank" 
+            link="https://www.instagram.com/bhumi.pemedas.permai/"
+            target="_blank"
           />
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
