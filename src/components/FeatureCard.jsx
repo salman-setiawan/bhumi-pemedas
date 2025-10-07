@@ -10,9 +10,7 @@ const FeatureCard = ({ img, title, desc, cta, link }) => {
             <div className="font-extrabold text-[#2C3626] text-[22px] uppercase">{title}</div>
             <div className="text-justify font-medium">{desc}</div>
           </div>
-          <a href={`/${link}`}>
-            <Button label={cta} link={link} colorSpec='bg-[#2C3626] text-white' />
-          </a>
+          <Button label={cta} link={`/${link}`} colorSpec='bg-[#2C3626] text-white' />
         </div>
       </div>
     </div>
