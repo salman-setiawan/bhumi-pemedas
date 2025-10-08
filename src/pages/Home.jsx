@@ -36,9 +36,13 @@ const Home = () => {
       <ParallaxHome img='drone-2.webp' />
       {/* Section 2 */}
       <div className="flex w-full justify-center bg-[#FFF7DB]">
-        <div className="flex flex-col gap-y-8 lg:gap-y-12 py-16 lg:max-w-[1200px] w-full px-0 lg:px-6">
+        <div className="flex flex-col gap-y-4 py-16 lg:max-w-[1200px] w-full px-0 lg:px-6">
           <div className="font-bold text-[#21271D] text-[32px] lg:text-[40px] px-6 lg:px-0">Apa kata mereka?</div>
-          <div className="flex gap-x-4 lg:gap-x-6 px-6 lg:px-0 pb-6 snap-x snap-mandatory overflow-x-auto">
+          <div className="flex flex-col gap-y-1 font-medium text-justify text-[#21271D] px-6 lg:px-0">
+            <div className="">Yuk simak kisah mereka yang sudah tinggal dan merasakan suasana Perumahan Bhumi Pemedas Permai.</div>
+            <div className="">Disini anda bisa geser foto/gambar ke kanan dan kiri untuk melihat lebih banyak testimoni.</div>
+          </div>
+          <div className="flex gap-x-4 lg:gap-x-6 px-6 lg:px-0 py-6 lg:py-8 snap-x snap-mandatory overflow-x-auto">
             {dataHomepage[0].testimonial.map((item) => (
               <TestimonialCard
                 key={item.uid}
@@ -52,7 +56,7 @@ const Home = () => {
       </div>
       {/* Section 3 */}
       <div className="flex w-full justify-center bg-[#FFF7DB]">
-        <div className="flex flex-col gap-y-12 pt-12 pb-20 lg:max-w-[1200px] w-full px-0 lg:px-6">
+        <div className="flex flex-col gap-y-12 pt-2 pb-20 lg:max-w-[1200px] w-full px-0 lg:px-6">
           <div className="font-bold text-[#21271D] text-[32px] lg:text-[40px] px-6 lg:px-0 lg:w-4/6">Kenapa sih harus punya rumah di Bhumi Pemedas Samboja?</div>
           <div className="flex flex-col gap-y-8 lg:max-w-[1200px]">
             {dataHomepage[0].benefit.map((item) => (

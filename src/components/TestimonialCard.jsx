@@ -14,7 +14,7 @@ const TestimonialCard = ({ img, vid, desc }) => {
     <div className="flex flex-col items-center">
       {/* Thumbnail */}
       <div
-        className="w-[20rem] lg:w-[24rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer rounded-2xl"
+        className="w-[18rem] lg:w-[24rem] aspect-square overflow-hidden shadow-lg shadow-black/30 relative cursor-pointer rounded-2xl"
         onClick={() => setShowVideo(true)}
       >
         <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />

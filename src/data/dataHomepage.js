@@ -27,35 +27,35 @@ const dataHomepage = [{
   testimonial: [
     {
       uid: 1,
-      img: '/testimoni/testi-arif.webp',
-      vid: 'https://youtube.com/shorts/8MTgMKDHQjM',
-      desc: 'testimoni dari pak arif',
-    },
-    {
-      uid: 2,
       img: '/testimoni/testi-yusuf.webp',
       vid: 'https://youtube.com/shorts/a2pgk4XlHC0',
       desc: 'testimoni dari pak yusuf',
     },
     {
-      uid: 3,
+      uid: 2,
       img: '/testimoni/testi-ansar.webp',
       vid: 'https://youtube.com/shorts/M2lWf_FD4hM',
       desc: 'testimoni dari pak ansar',
     },
     {
-      uid: 4,
+      uid: 3,
       img: '/testimoni/testi-aji.webp',
       vid: 'https://youtube.com/shorts/j38EqPvWoR8',
       desc: 'testimoni dari pak aji',
     },
     {
-      uid: 5,
+      uid: 4,
       img: '/testimoni/testi-saihu.webp',
       vid: 'https://youtube.com/shorts/b7Z47abBBWs',
       desc: 'testimoni dari pak saihu',
-    },]
-  },
+    },
+    {
+      uid: 5,
+      img: '/testimoni/testi-arif.webp',
+      vid: 'https://youtube.com/shorts/8MTgMKDHQjM',
+      desc: 'testimoni dari pak arif',
+    },
+  ]},
 ];
 
 export default dataHomepage
