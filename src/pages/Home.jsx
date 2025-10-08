@@ -24,7 +24,7 @@ const Home = () => {
               <div className="font-bold text-[32px] lg:w-5/6">Sudah lama tinggal di samboja, tapi belum punya rumah?</div>
             </div>
             <Button
-              label='Miliki rumah sekarang!'
+              label='Miliki sekarang!'
               colorSpec='text-white bg-[#21271D]'
               link='https://wa.me/6285753127810?text=Halo%20saya%20dari%20website,%20tertarik%20dengan%20produk%20anda.'
               target='_blank'

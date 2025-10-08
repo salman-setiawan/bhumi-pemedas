@@ -3,26 +3,23 @@ const dataFasum = [
   {
     uid: 1,
     label: 'Pantai Wisata Pemedas',
-    images: ['/home.webp','/home.webp','/home.webp','/home.webp','/home.webp'],
+    images: ['/fasum/pantai-1.webp','/fasum/pantai-2.webp','/fasum/pantai-3.webp'],
   },
   {
     uid: 2,
     label: 'Sekolah Dasar',
-    images: ['/home.webp','/home.webp','/home.webp','/home.webp'],
+    images: ['/fasum/sekolah-1.webp','/fasum/sekolah-2.webp'],
   },
   {
     uid: 3,
     label: 'Taman Bermain',
-    images: [
-      '/home.webp','/home.webp','/home.webp','/home.webp',
-      '/home.webp','/home.webp'
-    ],
+    images: ['/fasum/taman-2.webp','/fasum/taman-3.webp','/fasum/taman-4.webp'],
   },
     {
     uid: 4,
     label: 'Masjid dan TPA',
     images: [
-      'https://drive.google.com/uc?export=view&id=1MbJoo7JILZ0Nk9cltDsT1eYStQewzODG','/home.webp','/home.webp'
+      '/fasum/masjid-1.webp','/fasum/masjid-2.webp'
     ],
   },
 ]
