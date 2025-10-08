@@ -14,7 +14,7 @@ const Home = () => {
         <Navigation />
       </div>
       {/* Section 1 */}
-      <div className="flex justify-center bg-[#FFF7DB]" style={{ position: "relative" }}>
+      <div className="flex justify-center bg-[#FFF7DB] relative">
         <ParticlesComponent />
         <div className="flex flex-col lg:flex-row w-full lg:max-w-[1200px] lg:px-6 pb-12 lg:pt-20 lg:pb-24 items-center gap-x-12">
           <div className="flex lg:hidden w-full"><Trailer /></div>
@@ -162,7 +162,7 @@ const Home = () => {
       </div>
       {/* Footer */}
       <div className="text-[#FFF3C6] text-[14px] px-6 lg:px-8 pt-6 pb-8 bg-[#141414] flex flex-col lg:flex-row gap-y-4 lg:gap-x-16">
-        <div className="font-semibold text-[18px] min-w-[420px]">PT. Cipta Lima Sekawan</div>
+        <div className="font-semibold text-[18px] lg:min-w-[420px]">PT. Cipta Lima Sekawan</div>
         <div className="flex flex-col gap-y-1">
           <div className="font-semibold">Kantor Pemasaran</div>
           <div className="">Jl. Raya Handil II - Balikpapan Blok.AA No.09, Teluk Pemedas Kec. Samboja, Kab. Kutai Kartanegara Kode Pos 75277</div>

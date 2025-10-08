@@ -78,7 +78,7 @@ const Bio = () => {
       </div>
       {/* Footer */}
       <div className="text-[#FFF3C6] text-[14px] px-6 lg:px-8 pt-6 pb-8 bg-[#141414] flex flex-col lg:flex-row gap-y-4 lg:gap-x-16">
-        <div className="font-semibold text-[18px] min-w-[420px]">PT. Cipta Lima Sekawan</div>
+        <div className="font-semibold text-[18px] lg:min-w-[420px]">PT. Cipta Lima Sekawan</div>
         <div className="flex flex-col gap-y-1">
           <div className="font-semibold">Kantor Pemasaran</div>
           <div className="">Jl. Raya Handil II - Balikpapan Blok.AA No.09, Teluk Pemedas Kec. Samboja, Kab. Kutai Kartanegara Kode Pos 75277</div>
