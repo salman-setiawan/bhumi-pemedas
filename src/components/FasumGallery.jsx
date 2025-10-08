@@ -10,7 +10,7 @@ const FasumGallery = ({ label, images }) => {
               key={idx}
               src={src}
               alt={`${label}-${idx}`}
-              className="w-full object-cover"
+              className="w-full object-cover rounded-xl"
             />
           ))}
         </div>

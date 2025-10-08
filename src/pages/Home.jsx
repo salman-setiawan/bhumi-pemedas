@@ -160,6 +160,18 @@ const Home = () => {
           />
         </div>
       </div>
+      {/* Section 7 */}
+      <div className="text-[#FFF3C6] text-[14px] px-6 lg:px-8 pt-6 pb-8 bg-[#141414] flex flex-col lg:flex-row gap-y-4 lg:gap-x-16">
+        <div className="font-semibold text-[18px] min-w-[420px]">PT. Cipta Lima Sekawan</div>
+        <div className="flex flex-col gap-y-1">
+          <div className="font-semibold">Kantor Pemasaran</div>
+          <div className="">Jl. Raya Handil II - Balikpapan Blok.AA No.09, Teluk Pemedas Kec. Samboja, Kab. Kutai Kartanegara Kode Pos 75277</div>
+        </div>
+        <div className="flex flex-col gap-y-1">
+          <div className="font-semibold">Kantor Pusat</div>
+          <div className="">Komplek Perumahan Balikpapan Baru, Cluster TORONTO Blok – JB, No.08 Balikpapan Selatan Kode Pos 76114 </div>
+        </div>
+      </div>
     </div >
   );
 }
