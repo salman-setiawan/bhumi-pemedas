@@ -19,10 +19,10 @@ const Kavling = () => {
                 <div className="px-3 py-1.5 bg-red-600 text-white font-semibold lg:text-[18px] w-fit">Rp. 60 Juta per Kavling</div>
               </div>
               <ul className="list-disc list-outside flex flex-col gap-y-3 pl-5">
-                <li className="text-[#2C3626] font-semibold text-[18px]">Berukuran 10x15 m².</li>
-                <li className="text-[#2C3626] font-semibold text-[18px]">Tanah sudah matang, dengan jalan pengerasan batu latrit siap untuk mobilisasi material bangunan.</li>
-                <li className="text-[#2C3626] font-semibold text-[18px]">lokasi strategis, dekat pantai pemedas dan Pertamina Hulu Mahakam. cocok juga dibangun villa dan guest house.</li>
-                <li className="text-[#2C3626] font-semibold text-[18px]">Untuk Legalitas Sertifikat Hak Milik (SHM) pecah per kavling.</li>
+                <li className="text-[#2C3626] font-bold text-[20px]">Berukuran 10x15 m².</li>
+                <li className="text-[#2C3626] font-bold text-[20px]">Tanah sudah matang, dengan jalan pengerasan batu latrit siap untuk mobilisasi material bangunan.</li>
+                <li className="text-[#2C3626] font-bold text-[20px]">lokasi strategis, dekat pantai pemedas dan Pertamina Hulu Mahakam. cocok juga dibangun villa dan guest house.</li>
+                <li className="text-[#2C3626] font-bold text-[20px]">Untuk Legalitas Sertifikat Hak Milik (SHM) pecah per kavling.</li>
               </ul>
               <Button
                 label='Miliki sekarang!'
@@ -36,7 +36,7 @@ const Kavling = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-3 lg:gap-y-6">
-            <div className="font-bold text-[#2C3626] text-[24px]">Kondisi Kavling</div>
+            <div className="font-bold text-[#2C3626] text-[28px]">Kondisi Kavling</div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-2">
             </div>
             <img src="/kavling/kondisi-kavling-1.webp" alt="" className="object-cover" />
