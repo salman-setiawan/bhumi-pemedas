@@ -110,7 +110,7 @@ const Home = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="font-bold text-[#FFF3C6] text-center text-[16px] px-6 py-3">Lokasi Bhumi Pemedas Samboja</div>
+        <div className="font-bold text-[#FFF3C6] text-center px-6 py-3">Lokasi Bhumi Pemedas Samboja</div>
       </div>
       {/* Section 6 */}
       <div className="relative w-full flex flex-col lg:justify-center px-6 pt-12 pb-16 lg:pt-24 lg:pb-28 gap-y-8 bg-cover bg-center" style={{ backgroundImage: "url('/drone.webp')" }}>
@@ -160,7 +160,7 @@ const Home = () => {
           />
         </div>
       </div>
-      {/* Section 7 */}
+      {/* Footer */}
       <div className="text-[#FFF3C6] text-[14px] px-6 lg:px-8 pt-6 pb-8 bg-[#141414] flex flex-col lg:flex-row gap-y-4 lg:gap-x-16">
         <div className="font-semibold text-[18px] min-w-[420px]">PT. Cipta Lima Sekawan</div>
         <div className="flex flex-col gap-y-1">
@@ -172,7 +172,8 @@ const Home = () => {
           <div className="">Komplek Perumahan Balikpapan Baru, Cluster TORONTO Blok – JB, No.08 Balikpapan Selatan Kode Pos 76114 </div>
         </div>
       </div>
-    </div >
+      <div className="text-[#FFF3C6] text-center text-[12px] px-6 py-3 bg-[#141414]">@ 2025 ENFX. All right reserved.</div>
+    </div>
   );
 }
 
